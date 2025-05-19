@@ -1,0 +1,46 @@
+.footer{
+    background-color: #000a09;
+    background-image: url("/img/footer/back-mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+.footer-text{
+    font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        text-transform: lowercase;
+        color: #fff;
+}
+.footer-navigation{
+    display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        font-family: "Russo One", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: #fff;
+}
+@media only screen and (min-width: 1439px) {
+    .footer {
+            background-color: #000a09;
+            background-image: url("/img/footer/back-desk.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+ }
+ .footer-container{
+    gap: 16px;
+ }
+ .footer-navigation{
+    flex-direction: row;
+ }
+}
