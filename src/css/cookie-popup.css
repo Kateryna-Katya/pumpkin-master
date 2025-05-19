@@ -1,0 +1,107 @@
+.cookie-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 48%;
+    transform: translateX(-48%);
+    border: 1px solid #161616;
+        border-radius: 20px;
+        width: 335px;
+        height: 278px;
+        box-shadow: 0 14px 42px 0 rgba(8, 15, 52, 0.06);
+            background: #f1f1f1;
+    z-index: 1000;
+    padding: 36px 20px;
+    text-align: center;
+    display: none;
+}
+
+.popup-close-button {
+    position: absolute;
+    background-color: inherit;
+    border: none;
+    top: 16px;
+    right: 20px;
+    margin-left: auto;
+}
+
+.cookie-class {
+    font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        color: #161616;
+        width: 256px;
+    text-align: left;
+
+}
+
+.cookie-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    width: 301px;
+    height: 54px;
+    margin: 37px auto 0;
+}
+
+.btn-accept {
+    border: none;
+    border-radius: 56px;
+
+        width: 174px;
+        height: 54px;
+        box-shadow: 0 3px 12px 0 rgba(74, 58, 255, 0.18);
+            background: #161616;
+            font-family: "Inter", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.125;
+                color: #f1f1f1;
+    box-sizing: border-box;
+}
+
+.btn-decline {
+    box-shadow: 0 4px 8px 0 rgba(74, 58, 255, 0.08);
+    border: 1px solid #161616;
+        border-radius: 56px;
+        padding: 18px 26px;
+        width: 109px;
+        height: 54px;
+        font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.125;
+            color: #161616;
+    box-sizing: border-box;
+    background-color: inherit;
+}
+.popup-span{
+    display: none;
+}
+@media screen and (min-width: 1439px) {
+    .cookie-popup {
+        width: 1272px;
+            height: 164px;
+    }
+
+    .popup-close-button {
+        top: 60px;
+        right: 48px;
+    }
+.popup-span{
+    display: inline;
+}
+    .cookie-class {
+        font-size: 18px;
+        width: 570px;
+margin-left: 138px;
+    }
+
+    .cookie-buttons {
+        margin: -60px auto 0 830px;
+    }
+.btn-decline{
+    order: 2;
+}
+}

@@ -1,0 +1,116 @@
+.header {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: #032825;
+    height: 60px;
+    width: 100%;
+}
+
+.header-container {
+    padding: 16px;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: inherit;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.navigation-list {
+    display: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    backdrop-filter: blur(22px);
+    background: #032825;
+    width: 374px;
+    height: 734px;
+    z-index: 1000;
+    position: fixed;
+    top: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 75px 60px 75px;
+    transition: visibility 0.3s ease;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: left;
+    margin-bottom: 32px;
+}
+
+.menu-list-item {
+    font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+    transition: color 0.3s easy;
+}
+
+.menu-list-item:hover {
+    color: #ffc000;
+}
+
+.policy-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: left;
+}
+
+.policy-item {
+    font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+    transition: color 0.3s easy;
+}
+
+.policy-item:hover {
+    color: #ffc000;
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        width: 100%;
+        height: 80px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation-list {
+        display: flex;
+        gap: 22px;
+    }
+
+    .header-container {
+        padding: 30px 90px;
+    }
+
+    .navigation-item {
+        font-family: "Inter", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+        transition: color 0.3s easy;
+    }
+
+    .navigation-item:hover,
+    .navigation-item:active {
+        color:#ffc000;
+    }
+}
